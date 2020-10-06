@@ -9,7 +9,7 @@ public class TestClass
         {
             // MySQL CONNECTION PART
             Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/assign_2", "yogesh", "password");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/assign_2", "root", "password");
             Statement stmt = con.createStatement();
 
             //DECLARATIONS
