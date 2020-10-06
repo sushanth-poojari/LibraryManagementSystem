@@ -39,7 +39,7 @@ public class Admin
         try
         {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/assign_2", "yogesh", "password");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/assign_2", "root", "password");
             Statement stmt = con.createStatement();
             ResultSet rs = stmt.executeQuery("select * from book where id =" + tempo);
             if(rs.next())
@@ -68,7 +68,7 @@ public class Admin
         try
         {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/assign_2", "yogesh", "password");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/assign_2", "root", "password");
             Statement stmt = con.createStatement();
             ResultSet rs = stmt.executeQuery("select * from book where id =" + bID);
             if(!rs.next())
@@ -102,7 +102,7 @@ public class Admin
         try
         {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/assign_2", "yogesh", "password");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/assign_2", "root", "password");
             Statement stmt = con.createStatement();
             String book_id;
             System.out.println("Please enter book ID");
@@ -160,7 +160,7 @@ public class Admin
         try
         {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/assign_2", "yogesh", "password");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/assign_2", "root", "password");
             Statement stmt = con.createStatement();
             String book_id;
             System.out.println("Please enter book ID");
@@ -488,7 +488,7 @@ public class Admin
         try
         {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/assign_2", "yogesh", "password");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/assign_2", "root", "password");
             Statement stmt = con.createStatement();
             Scanner scan = new Scanner(System.in);
             System.out.println("Please enter the book ID to be issued");
@@ -564,7 +564,7 @@ public class Admin
         try
         {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/assign_2", "yogesh", "password");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/assign_2", "root", "password");
             Statement stmt = con.createStatement();
             String book_id;
             System.out.println("Please enter book ID");
@@ -623,8 +623,8 @@ public class Admin
 
         try
         {
-            Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/assign_2", "yogesh", "password");
+            Class.forName("com.mysql.jdbc.Driver"
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/assign_2", "root", "password");
             Statement stmt = con.createStatement();
             ResultSet rs = stmt.executeQuery("select * from book where student_id =" + stu_id);
             if(!rs.next())
