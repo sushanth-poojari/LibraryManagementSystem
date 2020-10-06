@@ -65,7 +65,7 @@ public class Book
 
     public void update_fine(int book_id,int fine) throws SQLException, ClassNotFoundException {
         Class.forName("com.mysql.jdbc.Driver");
-        Connection con= DriverManager.getConnection("jdbc:mysql://localhost:3306/assign_2","yogesh","password");
+        Connection con= DriverManager.getConnection("jdbc:mysql://localhost:3306/assign_2","root","password");
         String update_fine_query = "update book set fine =? where id =?";
         PreparedStatement update = con.prepareStatement(update_fine_query);
         update.setString(1,Integer.toString(fine));
