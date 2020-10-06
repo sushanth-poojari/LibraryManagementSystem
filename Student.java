@@ -45,7 +45,7 @@ public class Student
 
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/assign_2", "yogesh", "password");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/assign_2", "root", "password");
             Statement stmt = con.createStatement();
             Statement extra_stmt = con.createStatement();
             ResultSet rs = stmt.executeQuery("select * from book where student_id =" + id);
@@ -103,7 +103,7 @@ public class Student
         try
         {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/assign_2", "yogesh", "password");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/assign_2", "root", "password");
             Statement stmt = con.createStatement();
             Scanner scan = new Scanner(System.in);
             int book_id;
